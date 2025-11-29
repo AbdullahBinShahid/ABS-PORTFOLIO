@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Abdullah Bin Shahid - Mobile App Developer specializing in Flutter, Dart, and Python. Mentor to 300+ students at Jawan Pakistan.">
+    <title>Abdullah Bin Shahid | Mobile App Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">Abdullah<span class="accent">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="hero-title">Abdullah Bin Shahid</h1>
+                    <h2 class="hero-subtitle">Mobile App Developer</h2>
+                    <p class="hero-description">
+                        Crafting beautiful mobile experiences with Flutter. Passionate mentor empowering 300+ students
+                        at Jawan Pakistan.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/AbdullahBinShahid" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdullah-bin-shahid2001/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/@abdullahbinshahid154" target="_blank" rel="noopener noreferrer"
+                            aria-label="Medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="glow-effect"></div>
+                        <img src="profile.jpg" alt="Abdullah Bin Shahid" id="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a passionate <strong>Mobile App Developer</strong> with intermediate-level expertise in
+                        Flutter development.
+                    </p>
+                    <p>
+                        Currently, I'm working as a Flutter Frontend Developer, creating beautiful and performant mobile
+                        applications. Beyond development, I'm deeply committed to education and mentorship.
+                    </p>
+                    <p>
+                        At <strong>Jawan Pakistan</strong>, I have the privilege of training aspiring Flutter developers
+                        and have successfully mentored over <strong>300+ students</strong>, helping them kickstart their
+                        careers in mobile app development.
+                    </p>
+                    <p>
+                        I believe in writing clean, maintainable code and staying updated with the latest trends in
+                        mobile development. My goal is to build applications that not only look great but also provide
+                        exceptional user experiences.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>300+</h3>
+                            <p>Students Mentored</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#flutter-gradient)" />
+                            <path d="M24 12L12 24L18 30L36 12H24Z" fill="white" />
+                            <path d="M18 30L12 36L24 36L36 24L30 18L18 30Z" fill="white" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="flutter-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#02569B" />
+                                    <stop offset="1" stop-color="#0468D7" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Flutter</h3>
+                    <p>Building cross-platform mobile applications with beautiful UIs and smooth animations</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#dart-gradient)" />
+                            <path d="M28 12H12V28L20 36L36 20V12H28Z" fill="white" />
+                            <path d="M20 36L12 28L20 28L28 36H20Z" fill="white" opacity="0.5" />
+                            <defs>
+                                <linearGradient id="dart-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#0175C2" />
+                                    <stop offset="1" stop-color="#13B9FD" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Dart</h3>
+                    <p>Proficient in Dart programming language for Flutter development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#python-gradient)" />
+                            <path
+                                d="M24 8C18 8 16 10 16 14V18H24V19H14C10 19 8 21 8 26C8 31 10 33 14 33H17V29C17 25 19 23 23 23H31C33 23 35 21 35 19V14C35 10 33 8 27 8H24Z"
+                                fill="white" />
+                            <path
+                                d="M24 40C30 40 32 38 32 34V30H24V29H34C38 29 40 27 40 22C40 17 38 15 34 15H31V19C31 23 29 25 25 25H17C15 25 13 27 13 29V34C13 38 15 40 21 40H24Z"
+                                fill="white" opacity="0.8" />
+                            <defs>
+                                <linearGradient id="python-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#3776AB" />
+                                    <stop offset="1" stop-color="#FFD43B" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Backend development and scripting for mobile app integrations</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#firebase-gradient)" />
+                            <path d="M12 36L16 8L22 20L18 12L28 36H12Z" fill="white" />
+                            <path d="M28 36L32 16L36 36H28Z" fill="white" opacity="0.7" />
+                            <defs>
+                                <linearGradient id="firebase-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#FFA000" />
+                                    <stop offset="1" stop-color="#F57C00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Firebase</h3>
+                    <p>Backend services, authentication, and real-time databases</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#git-gradient)" />
+                            <path d="M24 8L8 24L24 40L40 24L24 8Z" fill="white" />
+                            <circle cx="24" cy="24" r="6" fill="#1a1a1a" />
+                            <defs>
+                                <linearGradient id="git-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#F05032" />
+                                    <stop offset="1" stop-color="#E44C30" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaborative development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="8" fill="url(#ui-gradient)" />
+                            <rect x="12" y="12" width="24" height="24" rx="2" stroke="white" stroke-width="2"
+                                fill="none" />
+                            <circle cx="24" cy="24" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="ui-gradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop stop-color="#667EEA" />
+                                    <stop offset="1" stop-color="#764BA2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="ai-companion.jpg" alt="AI Companion App" id="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Companion</h3>
+                        <p>A sophisticated mobile application similar to ChatGPT, featuring AI-powered conversations,
+                            natural language processing, and a beautiful, intuitive interface built with Flutter.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AbdullahBinShahid" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="coming-soon">
+                            <h4>More Projects Coming Soon</h4>
+                            <p>Currently working on exciting new mobile applications</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce App</h3>
+                        <p>A full-featured e-commerce mobile application with product browsing, cart management, and
+                            secure payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Present</div>
+                        <h3>Flutter Trainer & Mentor</h3>
+                        <h4>Jawan Pakistan</h4>
+                        <p>
+                            Training and mentoring aspiring Flutter developers, having successfully guided over 300+
+                            students in their mobile development journey. Conducting hands-on workshops, code reviews,
+                            and providing career guidance.
+                        </p>
+                        <ul>
+                            <li>Designed comprehensive Flutter curriculum</li>
+                            <li>Conducted live coding sessions and workshops</li>
+                            <li>Provided one-on-one mentorship and career guidance</li>
+                            <li>Helped students build real-world projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Present</div>
+                        <h3>Mobile App Developer</h3>
+                        <h4>ALF Growth Solutions - Texas, USA</h4>
+                        <p>
+                            Developing cross-platform mobile applications using Flutter and Dart. Focusing on creating
+                            beautiful, performant, and user-friendly mobile experiences for clients across various
+                            industries.
+                        </p>
+                        <ul>
+                            <li>Built and maintained multiple Flutter applications</li>
+                            <li>Implemented complex UI/UX designs</li>
+                            <li>Integrated REST APIs and backend services</li>
+                            <li>Optimized app performance and user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: var(--spacing-md);">
+                Read my articles on <a href="https://medium.com/@abdullahbinshahid154" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: var(--accent-primary); text-decoration: none; font-weight: 600;">Medium</a>
+            </p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="blog-oop.jpg" alt="OOP Blog Thumbnail">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2025</span>
+                            <span class="blog-category">OOP</span>
+                        </div>
+                        <h3>The Absolute Beginner's Guide to OOP in 2025</h3>
+                        <p>A comprehensive guide to Object-Oriented Programming concepts for beginners starting their
+                            coding journey.</p>
+                        <a href="https://medium.com/@abdullahbinshahid154/the-absolute-beginners-guide-to-oop-in-2025-bcf63f3332e2"
+                            target="_blank" rel="noopener noreferrer" class="read-more">Read on Medium →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="blog-dart-functions.jpg" alt="Dart Functions Blog Thumbnail">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2024</span>
+                            <span class="blog-category">Dart</span>
+                        </div>
+                        <h3>Mastering Functions in Dart</h3>
+                        <p>Deep dive into Dart functions, exploring different types, parameters, and best practices for
+                            Flutter development.</p>
+                        <a href="https://medium.com/@abdullahbinshahid154/mastering-functions-in-dart-2393fe027fb2"
+                            target="_blank" rel="noopener noreferrer" class="read-more">Read on Medium →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="blog-loops.jpg" alt="Loops Blog Thumbnail">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2024</span>
+                            <span class="blog-category">Programming</span>
+                        </div>
+                        <h3>Loops in Programming</h3>
+                        <p>Understanding loops and iteration in programming - essential concepts for every developer to
+                            master.</p>
+                        <a href="https://medium.com/@abdullahbinshahid154/loops-0f4d2bbeb103" target="_blank"
+                            rel="noopener noreferrer" class="read-more">Read on Medium →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>abdullahbinshahid154@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <span>+92 312 1170542</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Pakistan</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            <a href="https://www.linkedin.com/in/abdullah-bin-shahid2001/" target="_blank"
+                                rel="noopener noreferrer" style="color: inherit; text-decoration: none;">LinkedIn - For
+                                immediate contact, message me here</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abdullah Bin Shahid. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/AbdullahBinShahid" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/abdullah-bin-shahid2001/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://medium.com/@abdullahbinshahid154" target="_blank"
+                        rel="noopener noreferrer">Medium</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
