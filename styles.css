@@ -99,6 +99,9 @@ body {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--text-primary);
@@ -112,6 +115,19 @@ body {
 
 .logo:hover {
     opacity: 0.8;
+}
+
+.logo-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .nav-links {
@@ -1142,5 +1158,16 @@ section {
 
     .section-title {
         font-size: var(--font-size-3xl);
+    }
+}
+
+/* Responsive tweak: keep logo image smaller on small screens */
+@media (max-width: 640px) {
+    .logo-image {
+        width: 28px;
+        height: 28px;
+    }
+    .logo-text {
+        font-size: var(--font-size-lg);
     }
 }

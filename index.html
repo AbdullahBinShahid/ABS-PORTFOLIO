@@ -14,24 +14,32 @@
         rel="stylesheet">
     <meta name="google-site-verification" content="izXidbtRRAub_ISV4RhsqMpSIhUDL-ib90sBfn0pimk" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <!-- Favicon: adding multiple formats and fallbacks for better compatibility -->
+    <!-- NOTE: Add actual 16x16/32x32 PNGs and a favicon.ico in the repo root for full compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+    <link rel="apple-touch-icon" href="/logo.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://abdullah-portfolio.com/">
+    <!-- If your site is deployed at a different domain, update the URL below to the deployed domain -->
+    <meta property="og:url" content="https://abdullahbinshahid-portfolio-mu.vercel.app/">
     <meta property="og:title" content="Abdullah Bin Shahid | Mobile App Developer">
     <meta property="og:description"
         content="Mobile App Developer specializing in Flutter, Dart, and Python. Mentor to 300+ students.">
-    <meta property="og:image" content="logo.jpg">
+    <!-- Use absolute URL for social/og images for reliable previews -->
+    <meta property="og:image" content="https://abdullahbinshahid-portfolio-mu.vercel.app/logo.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://abdullah-portfolio.com/">
+    <meta property="twitter:url" content="https://abdullahbinshahid-portfolio-mu.vercel.app/">
     <meta property="twitter:title" content="Abdullah Bin Shahid | Mobile App Developer">
     <meta property="twitter:description"
         content="Mobile App Developer specializing in Flutter, Dart, and Python. Mentor to 300+ students.">
-    <meta property="twitter:image" content="logo.jpg">
+    <meta property="twitter:image" content="https://abdullahbinshahid-portfolio-mu.vercel.app/logo.jpg">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -60,7 +68,10 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="#home" class="logo">Abdullah<span class="accent">.</span></a>
+                <a href="#home" class="logo">
+                    <img src="/logo.jpg" alt="Abdullah logo" class="logo-image">
+                    <span class="logo-text">Abdullah<span class="accent">.</span></span>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
