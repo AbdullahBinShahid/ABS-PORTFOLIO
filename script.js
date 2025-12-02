@@ -83,14 +83,32 @@ if (contactForm) {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Simulate form submission (replace with actual API call)
-        setTimeout(() => {
-            // Success
-            formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-            formStatus.className = 'form-status success';
-            contactForm.reset();
+        try {
+            const response = await fetch('https://formspree.io/f/mkgdbzja', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
 
-            // Reset button
+            if (response.ok) {
+                formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                formStatus.className = 'form-status success';
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    throw new Error(data["errors"].map(error => error["message"]).join(", "));
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            }
+        } catch (error) {
+            formStatus.textContent = 'Failed to send message. ' + error.message;
+            formStatus.className = 'form-status error';
+        } finally {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
 
@@ -98,34 +116,7 @@ if (contactForm) {
             setTimeout(() => {
                 formStatus.style.display = 'none';
             }, 5000);
-        }, 1500);
-
-        // For actual implementation, use:
-        /*
-        try {
-            const response = await fetch('YOUR_API_ENDPOINT', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            });
-            
-            if (response.ok) {
-                formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-                formStatus.className = 'form-status success';
-                contactForm.reset();
-            } else {
-                throw new Error('Failed to send message');
-            }
-        } catch (error) {
-            formStatus.textContent = 'Failed to send message. Please try again.';
-            formStatus.className = 'form-status error';
-        } finally {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
         }
-        */
     });
 }
 
