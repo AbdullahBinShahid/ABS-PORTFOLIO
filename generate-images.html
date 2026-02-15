@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Placeholder Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        button {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #status {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .preview img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Portfolio Image Generator</h1>
+        <p>Click the button below to generate placeholder images for your portfolio.</p>
+        <button onclick="generateImages()">Generate All Images</button>
+        <div id="status"></div>
+        <div class="preview" id="preview"></div>
+    </div>
+
+    <script>
+        function generateImages() {
+            const status = document.getElementById('status');
+            const preview = document.getElementById('preview');
+            status.innerHTML = 'Generating images...';
+            preview.innerHTML = '';
+
+            const images = [
+                {
+                    filename: 'profile.jpg',
+                    text: 'Abdullah\nBin Shahid',
+                    colors: ['#6366f1', '#8b5cf6'],
+                    width: 800,
+                    height: 800
+                },
+                {
+                    filename: 'ai-companion.jpg',
+                    text: 'AI\nCompanion\nApp',
+                    colors: ['#10b981', '#059669'],
+                    width: 1200,
+                    height: 800
+                },
+                {
+                    filename: 'blog-1.jpg',
+                    text: 'Flutter\nDevelopment\nGuide',
+                    colors: ['#f59e0b', '#d97706'],
+                    width: 1200,
+                    height: 800
+                },
+                {
+                    filename: 'blog-2.jpg',
+                    text: 'Mentorship\nJourney',
+                    colors: ['#ec4899', '#be185d'],
+                    width: 1200,
+                    height: 800
+                },
+                {
+                    filename: 'blog-3.jpg',
+                    text: 'Building\nAI Apps',
+                    colors: ['#3b82f6', '#1d4ed8'],
+                    width: 1200,
+                    height: 800
+                }
+            ];
+
+            images.forEach(img => {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+
+                // Create gradient
+                const grd = ctx.createLinearGradient(0, 0, img.width, img.height);
+                grd.addColorStop(0, img.colors[0]);
+                grd.addColorStop(1, img.colors[1]);
+
+                ctx.fillStyle = grd;
+                ctx.fillRect(0, 0, img.width, img.height);
+
+                // Add text
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+                ctx.font = `bold ${img.width / 10}px Inter, Arial, sans-serif`;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                const lines = img.text.split('\n');
+                const lineHeight = img.width / 8;
+                const startY = img.height / 2 - ((lines.length - 1) * lineHeight) / 2;
+
+                lines.forEach((line, index) => {
+                    ctx.fillText(line, img.width / 2, startY + (index * lineHeight));
+                });
+
+                // Add icon/decoration
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.arc(img.width / 2, img.height / 2, img.width / 3, 0, Math.PI * 2);
+                ctx.stroke();
+
+                // Convert to blob and download
+                canvas.toBlob(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = img.filename;
+                    a.click();
+                    URL.revokeObjectURL(url);
+
+                    // Show preview
+                    const previewImg = document.createElement('img');
+                    previewImg.src = canvas.toDataURL();
+                    previewImg.alt = img.filename;
+                    preview.appendChild(previewImg);
+                }, 'image/jpeg', 0.95);
+            });
+
+            status.innerHTML = '✅ All images generated! Check your downloads folder.';
+        }
+    </script>
+</body>
+
+</html>
