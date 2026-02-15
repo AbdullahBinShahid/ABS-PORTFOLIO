@@ -279,3 +279,5 @@ stats.forEach(stat => {
 });
 
 console.log('Portfolio loaded successfully! 🚀');
+
+console.log('temp');
